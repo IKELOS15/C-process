@@ -9,11 +9,11 @@ int main()
     
     gets(src);
     
-    printf("src length = %d\n", strlen(src));
-    strcpy(dest, src);
+    printf("src length = %d\n", strlen(src));    // 길이
+    strcpy(dest, src);                            // 복사
     printf("src = %s, dest = %s\n", src, dest);
     gets(dest);
-    printf("result = %d\n", strcmp(src, dest));
+    printf("result = %d\n", strcmp(src, dest));    // 같으면 0
     
     return 0;
 }
