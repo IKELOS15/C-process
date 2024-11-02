@@ -65,7 +65,7 @@ int main()
     fread(&p2, sizeof(POINT), 1, fp);
     printf("p2 -> x : %d, y = %d\n", p2.x, p2.y);
     fseek(fp, sizeof(POINT)*-2, SEEK_END);
-    printf("pi = %d\n", ftell(fp));
+    printf("pi = %ld\n", ftell(fp));
     fread(&p2, sizeof(POINT), 1, fp);
     printf("p2 -> x : %d, y = %d\n", p2.x, p2.y);
     fseek(fp, 0, SEEK_END);
